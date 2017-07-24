@@ -54,9 +54,9 @@ app.get('/new/:targetURL(*)', async (req, res) => {
         var numberOfEntries = await  urlModel.count() ;
         var url = new urlModel({targetURL:targetURL, shortURL: formatNumber(numberOfEntries + 1) });
         await url.save();
-        res.json({original_url: url.targetURL, short_url: "http://localhost:5000/" + url.shortURL});
+        res.json({original_url: url.targetURL, short_url: process.env.HOST + url.shortURL});
     } else{
-        res.json({original_url: url.targetURL, short_url: "http://localhost:5000/" + url.shortURL});
+        res.json({original_url: url.targetURL, short_url: process.env.HOST + url.shortURL});
     }
  });
 
