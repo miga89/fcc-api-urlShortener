@@ -1,0 +1,36 @@
+body{
+    font-family: 'Lato', sans-serif;
+}
+
+
+.form-container{
+    width: 350px;
+    margin: 0 auto 0 auto;
+}
+.title{
+    text-align: center;
+}
+
+.explain{
+    margin-top: 150px;
+}
+
+.st{
+    color: gray;
+}
+.link{
+    font-family: 'Roboto', sans-serif;
+    color:  #c62553;
+}
+.url-form{
+    text-align: center;
+}
+
+.urlInput{
+    width:  300px;
+
+}
+
+.submitBtn{
+    margin-top: 5px;
+}
